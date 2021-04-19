@@ -89,7 +89,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.yinzx.primaryms.PrimarymsApplication</mainClass>
+                    <mainClass>com.yinzx.PrimarymsApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -101,6 +101,14 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/java/</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 
 </project>
