@@ -13,7 +13,7 @@ public class MybatisGeneratorUtil {
     public static void main(String[] args) {
         List<String> warnings = new ArrayList<>();
         boolean overwrite = true;
-        try(InputStream is = MybatisGeneratorUtil.class.getResourceAsStream("/generatorConfig.xml");){
+        try(InputStream is = MybatisGeneratorUtil.class.getResourceAsStream("/generatorConfig.xml")){
             ConfigurationParser cp = new ConfigurationParser(warnings);
             Configuration config = cp.parseConfiguration(is);
             DefaultShellCallback callback = new DefaultShellCallback(overwrite);
